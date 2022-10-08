@@ -169,6 +169,7 @@ body {
 }
 .card-image {
     margin-bottom: 30px;
+    display: block;
 }
 .card-title {
     font-weight: 500;
@@ -270,8 +271,11 @@ body {
 .portfolio-card {
     background: var(--color-white);
 }
+.portfolio-card img {
+    display: block;
+}
 .cards-borderbottom {
-    padding: 20px 24px;
+    padding: 19px 24px;
     border-bottom: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
