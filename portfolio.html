@@ -20,38 +20,44 @@
   <body>
     <header class="menu">
       <div class="container">
-        <nav class="menu-nav">
-          <a class="logo" href="./index.html" title="Home page"
-            >Web<span>Studio</span></a
-          >
+        <div class="header-container">
+          <nav class="menu-nav">
+            <a class="logo" href="./index.html" title="Home page"
+              >Web<span>Studio</span></a
+            >
+            <ul class="nav-links">
+              <li>
+                <a class="nav-link" href="./index.html" title="Studio"
+                  >Студія</a
+                >
+              </li>
+              <li class="nav-actual">
+                <a class="nav-link" href="./portfolio.html" title="Portfolio"
+                  >Портфоліо</a
+                >
+              </li>
+              <li>
+                <a class="nav-link" href="#" title="Contacts">Контакти</a>
+              </li>
+            </ul>
+          </nav>
           <ul class="nav-links">
-            <li>
-              <a class="nav-link" href="./index.html" title="Studio">Студія</a>
-            </li>
-            <li class="nav-actual">
-              <a class="nav-link" href="./portfolio.html" title="Portfolio"
-                >Портфоліо</a
+            <li class="li-contacts">
+              <a class="nav-contacts" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
               >
             </li>
-            <li><a class="nav-link" href="#" title="Contacts">Контакти</a></li>
+            <li class="li-contacts">
+              <a class="nav-contacts" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
           </ul>
-        </nav>
-        <ul class="nav-links">
-          <li>
-            <a class="nav-contacts" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a class="nav-contacts" href="tel:+380961111111"
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
     <main class="portfolio">
-      <section class="portfolio-cards">
+      <section class="portfolio-cards section-pading">
         <div class="container">
           <ul class="list-buttons">
             <li><button class="portfolio-button" type="button">Усі</button></li>
@@ -71,8 +77,10 @@
           <ul class="portfolio-cards-list">
             <li class="portfolio-card">
               <img src="./images/technocrak.jpg" alt="technocrak" width="370" />
-              <h3 class="portfolio-card-title">Технокряк</h3>
-              <p class="portfolio-card-text">Веб-сайт</p>
+              <div class="cards-borderbottom">
+                <h3 class="portfolio-card-title">Технокряк</h3>
+                <p class="portfolio-card-text">Веб-сайт</p>
+              </div>
             </li>
             <li class="portfolio-card">
               <img
@@ -80,10 +88,12 @@
                 alt="poster-new-orlean-vs-golden-star"
                 width="370"
               />
-              <h3 class="portfolio-card-title">
-                Постер New Orlean vs Golden Star
-              </h3>
-              <p class="portfolio-card-text">Дизайн</p>
+              <div class="cards-borderbottom">
+                <h3 class="portfolio-card-title">
+                  Постер New Orlean vs Golden Star
+                </h3>
+                <p class="portfolio-card-text">Дизайн</p>
+              </div>
             </li>
             <li class="portfolio-card">
               <img
@@ -91,8 +101,10 @@
                 alt="seafood-restaurant"
                 width="370"
               />
-              <h3 class="portfolio-card-title">Ресторан Seafood</h3>
-              <p class="portfolio-card-text">Додаток</p>
+              <div class="cards-borderbottom">
+                <h3 class="portfolio-card-title">Ресторан Seafood</h3>
+                <p class="portfolio-card-text">Додаток</p>
+              </div>
             </li>
             <li class="portfolio-card">
               <img
@@ -100,8 +112,10 @@
                 alt="project-prime"
                 width="370"
               />
-              <h3 class="portfolio-card-title">Проєкт Prime</h3>
-              <p class="portfolio-card-text">Маркетинг</p>
+              <div class="cards-borderbottom">
+                <h3 class="portfolio-card-title">Проєкт Prime</h3>
+                <p class="portfolio-card-text">Маркетинг</p>
+              </div>
             </li>
             <li class="portfolio-card">
               <img
@@ -109,8 +123,10 @@
                 alt="boxes-project"
                 width="370"
               />
-              <h3 class="portfolio-card-title">Проєкт Boxes</h3>
-              <p class="portfolio-card-text">Додаток</p>
+              <div class="cards-borderbottom">
+                <h3 class="portfolio-card-title">Проєкт Boxes</h3>
+                <p class="portfolio-card-text">Додаток</p>
+              </div>
             </li>
             <li class="portfolio-card">
               <img
@@ -118,8 +134,10 @@
                 alt="inspiration-has-no-borders"
                 width="370"
               />
-              <h3 class="portfolio-card-title">Inspiration has no Borders</h3>
-              <p class="portfolio-card-text">Веб-сайт</p>
+              <div class="cards-borderbottom">
+                <h3 class="portfolio-card-title">Inspiration has no Borders</h3>
+                <p class="portfolio-card-text">Веб-сайт</p>
+              </div>
             </li>
             <li class="portfolio-card">
               <img
@@ -127,8 +145,10 @@
                 alt="edition-limited-edition"
                 width="370"
               />
-              <h3 class="portfolio-card-title">Видання Limited Edition</h3>
-              <p class="portfolio-card-text">Дизайн</p>
+              <div class="cards-borderbottom">
+                <h3 class="portfolio-card-title">Видання Limited Edition</h3>
+                <p class="portfolio-card-text">Дизайн</p>
+              </div>
             </li>
             <li class="portfolio-card">
               <img
@@ -136,8 +156,10 @@
                 alt="lab-project"
                 width="370"
               />
-              <h3 class="portfolio-card-title">Проєкт LAB</h3>
-              <p class="portfolio-card-text">Маркетинг</p>
+              <div class="cards-borderbottom">
+                <h3 class="portfolio-card-title">Проєкт LAB</h3>
+                <p class="portfolio-card-text">Маркетинг</p>
+              </div>
             </li>
             <li class="portfolio-card">
               <img
@@ -145,8 +167,10 @@
                 alt="growing-business"
                 width="370"
               />
-              <h3 class="portfolio-card-title">Growing Business</h3>
-              <p class="portfolio-card-text">Додаток</p>
+              <div class="cards-borderbottom">
+                <h3 class="portfolio-card-title">Growing Business</h3>
+                <p class="portfolio-card-text">Додаток</p>
+              </div>
             </li>
           </ul>
         </div>
