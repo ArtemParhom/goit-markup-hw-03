@@ -1,7 +1,12 @@
-ul, li, img, h1, h2, h3, p, img {
+ul, li, h1, h2, h3, p{
     margin: 0;
     padding: 0;
 }
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+ } /*6. Для img не потрібно обнуляти марджини і паддинги - https: //i.imgur.com/HMSv7wU.png. Для усіх img потрібно задати display:block; max-width:100%; height: auto; */
 * {
     box-sizing:border-box;
 }
@@ -20,17 +25,21 @@ body {
 }
 .menu { 
     border-bottom: 1px solid #ECECEC;
-    
+     padding: 24px 0 25px; 
+     /*2. Приберіть дів header-container,
+        паддинги задайте для хедеру*/
+} 
+.menu .container {
+    display: flex;
+    align-items: center;
 }
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
 }
-.header-container {
-    padding: 24px 0 25px; 
-}
-.header-container, .menu-nav {
+
+.menu-nav {
     display: flex;
     align-items: center;
 } 
@@ -54,6 +63,11 @@ body {
     margin-right: 0; 
     margin-left: auto;   
 }
+.list-link:not(:last-child) {
+   margin-right: 50px; 
+   /*3. Для .nav-link приберіть марджин,
+    задайте його для li і обнуліть у останнього елементу*/
+}
 .nav-link {
     font-weight: 500;
     font-size: 14px;
@@ -61,12 +75,11 @@ body {
     letter-spacing: 0.02em; 
     text-decoration: none;
     list-style: none;
-    color: var(--brand-color);
-    margin-right: 50px;  
-      
+    color: var(--brand-color);   
 }
 .nav-actual {
-    list-style: circle;
+     color: var(--logo-color-blue); /*1. Приберіть макрер для активного посилання. Краще міняйте колір,
+        як на макеті */
 }
 .nav-contacts {   
     font-weight: 500;
@@ -120,8 +133,7 @@ body {
 .skills {
     list-style: none;
     display: flex;
-    gap: 30px;
-    margin-bottom: 94px;   
+    gap: 30px;   
 }
 .skill-title {
     font-size: 14px;
@@ -139,6 +151,9 @@ body {
 }
 .section-pading {
     padding: 94px 0;
+}
+.section-images {
+    padding-bottom: 94px;
 }
 .subtitle {
     font-size: 36px;
@@ -165,11 +180,10 @@ body {
     background: var(--color-white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    padding-bottom: 30px;
+    /* padding-bottom: 30px; 7. Для .card приберіть паддинг */
 }
 .card-image {
-    margin-bottom: 30px;
-    display: block;
+    /* margin-bottom: 30px; 8. Для .card-image приберіть марджин*/
 }
 .card-title {
     font-weight: 500;
@@ -179,6 +193,8 @@ body {
     letter-spacing: 0.03em;
     color: var(--brand-color);
     margin-bottom: 10px;
+     padding-top: 30px; 
+     /*9. Для .card-title задайте верхній паддинг */
 }
 .card-text {
     font-size: 16px;
@@ -186,6 +202,8 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--color-contacts-text);
+    padding-bottom: 30px;
+    /*10. Для .card-text задайте нижній паддинг */
 }
 .page-footer {
     background: var(--background-footer-color);

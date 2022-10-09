@@ -20,48 +20,50 @@
   <body>
     <header class="menu">
       <div class="container">
-        <div class="header-container">
-          <nav class="menu-nav">
-            <a class="logo" href="./index.html" title="Home page"
-              >Web<span>Studio</span></a
-            >
-            <ul class="nav-links">
-              <li class="nav-actual">
-                <a class="nav-link" href="./index.html" title="Studio"
-                  >Студія</a
-                >
-              </li>
-              <li>
-                <a class="nav-link" href="./portfolio.html" title="Portfolio"
-                  >Портфоліо</a
-                >
-              </li>
-              <li>
-                <a class="nav-link" href="#" title="Contacts">Контакти</a>
-              </li>
-            </ul>
-          </nav>
+        <nav class="menu-nav">
+          <a class="logo" href="./index.html" title="Home page"
+            >Web<span>Studio</span></a
+          >
           <ul class="nav-links">
-            <li class="li-contacts">
-              <a class="nav-contacts" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
+            <li class="list-link">
+              <a class="nav-link nav-actual" href="./index.html" title="Studio"
+                >Студія</a
               >
             </li>
-            <li class="li-contacts">
-              <a class="nav-contacts" href="tel:+380961111111"
-                >+38 096 111 11 11</a
+            <li class="list-link">
+              <a class="nav-link" href="./portfolio.html" title="Portfolio"
+                >Портфоліо</a
               >
+            </li>
+            <li class="list-link">
+              <a class="nav-link" href="#" title="Contacts">Контакти</a>
             </li>
           </ul>
-        </div>
+        </nav>
+        <ul class="nav-links">
+          <li class="li-contacts">
+            <a class="nav-contacts" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="li-contacts">
+            <a class="nav-contacts" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
       </div>
     </header>
     <main>
       <section class="section-title">
-        <h1 class="title">Ефективні рішення для вашого бізнесу</h1>
-        <button class="button-title" type="button">Замовити послугу</button>
+        <div class="container">
+          <!--4. Всередині першої секції додайте дів контейнер-->
+          <h1 class="title">Ефективні рішення для вашого бізнесу</h1>
+          <button class="button-title" type="button">Замовити послугу</button>
+        </div>
       </section>
       <section class="section-skills section-pading">
+        <!--5. Цей список повинен бути окремою секцією - https://i.imgur.com/kHd5lLb.png-->
         <div class="container">
           <ul class="skills">
             <li class="skill">
@@ -92,6 +94,10 @@
               </p>
             </li>
           </ul>
+        </div>
+      </section>
+      <section class="section-images">
+        <div class="container">
           <h2 class="subtitle">Чим ми займаємося</h2>
           <ul class="images-list">
             <li class="image">
